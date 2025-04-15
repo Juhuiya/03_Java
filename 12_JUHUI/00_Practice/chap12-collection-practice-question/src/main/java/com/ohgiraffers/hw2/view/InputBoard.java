@@ -40,6 +40,9 @@ public class InputBoard {
         String content = contentBuilder.toString().trim();
         board.setReadCount(0);
 
+        // 내용 설정 추가
+        board.setBoardContent(content);
+
         board.setBoardDate(new Date()); // 현재 날짜로 지정
 
         return board;

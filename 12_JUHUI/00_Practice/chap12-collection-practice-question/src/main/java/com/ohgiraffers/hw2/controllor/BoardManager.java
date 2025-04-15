@@ -9,8 +9,8 @@ import java.util.Date;
 
 public class BoardManager {
 
-    private ArrayList<BoardDTO> boardList = new ArrayList<>();
-    private ResultPrinter resultPrinter = new ResultPrinter();
+    ArrayList<BoardDTO> boardList = new ArrayList<>();
+    ResultPrinter resultPrinter = new ResultPrinter();
     private int boardNoCount = 1; // 게시글 번호 자동 생성을 위한 카운터
 
 
@@ -128,7 +128,7 @@ public class BoardManager {
         }
 
         if (deleted){
-            resultPrinter.successPage("updateContent"); //꼭 성공용메세지만 오류남
+            resultPrinter.successPage("deleteBoard");
         } else {
             resultPrinter.errorPage("deleteBoard");
         }

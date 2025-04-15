@@ -69,7 +69,8 @@ public class BoardMenu {
 
     }
 
-    public sortSubMenu() {
+    // 반환타입인 void를 넣지 않아서 빨간 글씨로 떴던 것.
+    public void sortSubMenu() {
         int choice;
 
         do {
